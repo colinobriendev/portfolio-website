@@ -97,6 +97,13 @@ h6 { font-size: 16px};
 
 }
 
+.icons-wrapper{
+    display: flex;
+    gap: 15px;
+    padding: 0 10px;
+    margin-left: 10px;
+}
+
 #navigation{
     margin:0;
     padding:10px;
@@ -108,36 +115,19 @@ h6 { font-size: 16px};
     margin-left: 5px;
 }
 
-.dots-wrapper{
-    display: flex;
+.fa:hover {
+    text-shadow: 0 0 3px #000;
 }
 
-#dot-1{
-    background-color: #fc6058;
-}
-
-#dot-2{
-    background-color: #FEC02F;
-}
-
-#dot-3{
-    background-color:#2ACA3E;
-}
-
-.browser-dot{
-    background-color: black;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    margin: 5px;
-
-    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
-    -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
-    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+.fa {
+    color: black;
+    cursor: pointer;
 }
 
 .left-column{
     grid-area:left-column;
+    display: grid;
+    align-content: center;
 }
 
 #profile-pic{
@@ -148,31 +138,6 @@ h6 { font-size: 16px};
 	width: 200px;
 	object-fit: cover;
 	border:2px solid var(--borderColor);
-}
-
-.theme-options-wrapper{
-    display: flex;
-    justify-content: center;
-}
-
-.theme-dot{
-    height: 30px;
-    width: 30px;
-    background-color: black;
-    border-radius: 50%;
-    cursor:pointer;
-
-    margin: 5px;
-    border: 2px solid var(--themeDotBorder);
-
-
-    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
-    -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
-    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
-}
-
-.theme-dot:hover{
-    border-width: 5px;
 }
 
 #light-mode{
