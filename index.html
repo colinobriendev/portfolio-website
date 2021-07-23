@@ -4,15 +4,16 @@
 <head>
     <title>Colin O'Brien</title>
 
-    <meta name="viewport" content="width=device-width,
-    initial-scale=1, maximum-scale=1, minimum-scale=1" />
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Exo&family=Roboto&display=swap');
     </style>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
 </head>
 
 <body>
@@ -22,6 +23,7 @@
             <div class="greeting-wrapper">
                 <h1>Hi, I'm Colin O'Brien</h1>
             </div>
+
             <div class="intro-wrapper">
                 <div class="nav-wrapper">
                     <div class="icons-wrapper">
@@ -38,110 +40,124 @@
                     <ul id="navigation">
                         <li>
                             <i id="modeToggle" class="fa fa-moon-o fa-2x"></i>
-
                         </li>
-                    </ul>
                 </div>
+
                 <div class="left-column">
-                    <img id="profile-pic" style="border-radius: 50%; border: 4px solid var(--borderColor);"
+
+                    <img id="profile_pic" style="border-radius: 50%; border: 4px solid var(--borderColor);"
                         src="images/Colin.jpg">
                 </div>
 
                 <div class="right-column">
+
                     <div id="preview-shadow">
                         <div id="preview">
                             <div id="corner-tl" class="corner"></div>
                             <div id="corner-tr" class="corner"></div>
                             <h3>What I Do</h3>
                             <p>I'm a consultant working on Windchill, a PLM software.
-                            </p>
-                            <div id="corner-bl" class="corner"></div>
                             <div id="corner-br" class="corner"></div>
+                            <div id="corner-bl" class="corner"></div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-        </div>
         </div>
     </section>
 
     <section class="s2">
         <div class="main-container">
+
             <div class="about-wrapper">
-                <div class="about-me">
-                    <h2 style="text-align:center;">More about me</h2>
+                <h2 style="text-align:center;">More about me</h2>
 
-                    <p>I've recently wanted to learn new technologies so I started with this website. It's been
-                        years since I've touched HTML/CSS/JS so I started with something simple and plan to add more to
-                        this site.
-                    </p>
+                <p>I enjoy exploring new technologies so I started with this website. It's been
+                    years since I've touched HTML/CSS/JS so I started with something simple and plan to add more
+                    as I learn things that can improve it.</p>
 
-                    <p>Some other technologies I'd like to look into after I've made some improvements are
-                        React, Python, Kotlin, and Android.</p>
-
-                    <p>I've also taken up Game Development as a hobby and will post any games I finish here.</p>
-                </div>
-                <h2 style="text-align:center;">Skills</h2>
-                <div class="skills">
-                    <p>Java</p>
-                    <div class="container">
-                        <div class="skills java"></div>
-                    </div>
-
-                    <p>SQL</p>
-                    <div class="container">
-                        <div class="skills sql"></div>
-                    </div>
-
-                    <p>Python</p>
-                    <div class="container">
-                        <div class="skills python"></div>
-                    </div>
-                </div>
+                <p>I've also taken up Game Development as a hobby and will post any games I finish here.</p>
+            </div>
+        </div>
+        </div>
     </section>
 
     <section class="s1">
         <div class="main-container">
-            <h2 style="text-align:center;">Projects</h3>
-                <div class="post-wrapper">
-                    <div>
-                        <div class="post">
-                            <img class="thumbnail" src="images/code.jpg">
-                            <div class="post-preview">
-                                <h4 class="post-title">Post Title</h4>
-                                <p class="post-intro">This is a sentence.</p>
-                                <a href="#">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="post">
-                            <img class="thumbnail" src="images/code.jpg">
-                            <div class="post-preview">
-                                <h4 class="post-title">Post Title</h4>
-                                <p class="post-intro">This is a sentence.</p>
-                                <a href="#">Read More</a>
-                            </div>
-                        </div>
-                    </div>
+            <h2 style="text-align:center; padding:0;">Skills</h2>
+            <div class="skills-wrapper">
+                <div class="skills-left-column">
+                    <h3 style="padding:0; margin:0;">I've worked with</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>SQL</li>
+                        <li>JUnit</li>
+                        <li>Cucumber</li>
+                        <li>Jenkins</li>
+                    </ul>
 
-                    <div>
-                        <div class="post">
-                            <img class="thumbnail" src="images/code.jpg">
-                            <div class="post-preview">
-                                <h4 class="post-title">Post Title</h4>
-                                <p class="post-intro">This is a sentence.</p>
-                                <a href="#">Read More</a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
+                <div class="skills-right-column">
+                    <h3 style="padding:0; margin:0;">I want to learn more about</h3>
+                    <ul>
+                        <li>React</li>
+                        <li>Android</li>
+                        <li>Dev Ops</li>
+                        <li>Godot Engine</li>
+                        <li>Unreal Engine</li>
+
+                    </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
 
     <section class="s2">
+        <div class="main-container">
+            <h3 style="text-align: center;">Some of my past projects</h3>
+
+            <div class="post-wrapper">
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/code.jpg">
+                        <div class="post-preview">
+                            <h6 class="post-title">Post Title</h6>
+                            <p class="post-intro">This is a sentence.</p>
+                            <a href="post.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/code.jpg">
+                        <div class="post-preview">
+                            <h6 class="post-title">Post Title</h6>
+                            <p class="post-intro">This is a sentence.</p>
+                            <a href="post.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/code.jpg">
+                        <div class="post-preview">
+                            <h6 class="post-title">Post Title</h6>
+                            <p class="post-intro">This is a sentence.</p>
+                            <a href="post.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="s1">
         <div class="main-container">
             <h2 style="text-align: center;">Contact</h2>
             <div class="contact-wrapper">
@@ -160,6 +176,7 @@
         </div>
     </section>
 
+    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
