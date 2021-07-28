@@ -35,4 +35,6 @@ function setTheme(mode) {
 		moonButton.style.display = "none"
 		sunButton.style.display = "block"
 	}
+
+	localStorage.setItem('theme', mode)
 }
