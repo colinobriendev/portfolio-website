@@ -2,33 +2,30 @@ console.log('Its working')
 
 let theme = localStorage.getItem('theme')
 
-if(theme == null){
+if (theme == null) {
 	setTheme('light')
-}else{
+} else {
 	setTheme(theme)
 }
 
-let moonButton = document.getElementById('moon')
-let sunButton = document.getElementById('sun')
+let toggleButtons = document.getElementsByClassName("buttonToggle")
 
-sunButton.addEventListener('click', function(){
+for (var i = 0; i < toggleButtons.length; i++) {
+	toggleButtons[i].addEventListener('click', getMode, false);
+}
+
+function getMode() {
 	let mode = this.dataset.mode
 	console.log('Option clicked:', mode)
 	setTheme(mode)
-})
+}
 
-moonButton.addEventListener('click', function(){
-	let mode = this.dataset.mode
-	console.log('Option clicked:', mode)
-	setTheme(mode)
-})
-
-function setTheme(mode){
-	if (mode == 'light'){
+function setTheme(mode) {
+	if (mode == 'light') {
 		document.getElementById('theme-style').href = 'default.css'
 	}
 
-	if (mode == 'dark'){
-        document.getElementById('theme-style').href = 'dark.css'
-    }
+	if (mode == 'dark') {
+		document.getElementById('theme-style').href = 'dark.css'
+	}
 }
