@@ -23,11 +23,3 @@
     color: #fff;
     cursor: pointer;
 }
-
-#moon {
-	display: none;
-}
-
-#sun {
-	display: block;
-}

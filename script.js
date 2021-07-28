@@ -2,13 +2,16 @@ console.log('Its working')
 
 let theme = localStorage.getItem('theme')
 
+let sunButton = document.getElementById("sun")
+let moonButton = document.getElementById("moon")
+
+let toggleButtons = document.getElementsByClassName("buttonToggle")
+
 if (theme == null) {
 	setTheme('light')
 } else {
 	setTheme(theme)
 }
-
-let toggleButtons = document.getElementsByClassName("buttonToggle")
 
 for (var i = 0; i < toggleButtons.length; i++) {
 	toggleButtons[i].addEventListener('click', getMode, false);
@@ -21,11 +24,15 @@ function getMode() {
 }
 
 function setTheme(mode) {
-	if (mode == 'light') {
+	if (mode === 'light') {
 		document.getElementById('theme-style').href = 'default.css'
+		sunButton.style.display = "none"
+		moonButton.style.display = "block"
 	}
 
-	if (mode == 'dark') {
+	if (mode === 'dark') {
 		document.getElementById('theme-style').href = 'dark.css'
+		moonButton.style.display = "none"
+		sunButton.style.display = "block"
 	}
 }
