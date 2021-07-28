@@ -140,6 +140,10 @@ h6 { font-size: 16px;}
     cursor: pointer;
 }
 
+#sun {
+    display:none;
+}
+
 .left-column{
     grid-area:left-column;
     display: grid;
