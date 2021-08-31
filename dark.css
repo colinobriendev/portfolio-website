@@ -1,25 +1,25 @@
-:root{
-	--mainColor: #121212;
-	--secondaryColor:#181818;
+:root {
+  --mainColor: #121212;
+  --secondaryColor: #181818;
 
-	--borderColor:#c1c1c1;
+  --borderColor: #c1c1c1;
 
-	--mainText:#fff;
-	--secondaryText:#eeeeee;
+  --mainText: #fff;
+  --secondaryText: #eeeeee;
 
-	--previewBg:rgb(10,15,15,0.8);
-	--previewShadow:#404040;
+  --previewBg: rgb(10, 15, 15, 0.8);
+  --previewShadow: #404040;
 }
 
-#preview{
-    border:1.5px solid #c1c1c1;
+#preview {
+  border: 1.5px solid #c1c1c1;
 }
 
 .fa:hover {
-    text-shadow: 0 0 3px #fff;
+  text-shadow: 0 0 3px #fff;
 }
 
 .fa {
-    color: #fff;
-    cursor: pointer;
+  color: #fff;
+  cursor: pointer;
 }
